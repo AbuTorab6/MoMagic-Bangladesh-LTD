@@ -22,14 +22,14 @@ const Navigation = () =>
     var jubo = ()=>
     {
         var topNav= document.querySelector('.top-nav')
-        if(window.scrollY>1)
+        if(window.scrollY>100)
         {
             v2({navigationBackground:"navigation-background-scroll"});
             topNav.classList.add('visibility-none')
             topNav.classList.remove('visibility-yes')
             
         }
-        else if(window.scrollY<1)
+        else if(window.scrollY<100)
         {
             v2({navigationBackground:"navigation-background"});
             topNav.classList.remove('visibility-none')
